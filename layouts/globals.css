@@ -1,0 +1,19 @@
+.background-color {
+  background-color: var(--background-color);
+}
+.main-text-color {
+  color: var(--main-text-color);
+}
+.sec-text-color {
+  color: var(--sec-text-color);
+}
+.hover-text-color {
+  color: var(--hover-text-color);
+}
+
+.main-text-family {
+    font-family: var(--main-text-family);
+}
+.sec-text-family {
+    font-family: var(--sec-text-family);
+}

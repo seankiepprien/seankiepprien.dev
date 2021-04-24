@@ -10,9 +10,14 @@ module.exports = {
 
         './nuxt.config.{js,ts}'
     ],
-    darkMode: true, // or 'media' or 'class'
+    darkMode: false, // or 'media' or 'class'
     theme: {
-      extend: {},
+      colors: {
+        'background': '16111c',
+        'primary': '#ffffff',
+        'secondary': 'b171ff',
+        'hover': 'd3afff',
+      },
     },
     variants: {
       extend: {},
