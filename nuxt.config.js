@@ -20,6 +20,9 @@ export default {
   },
 
   target: 'static',
+  router: {
+    base: '/seankiepprien.dev/'
+  },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
