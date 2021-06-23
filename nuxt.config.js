@@ -1,3 +1,5 @@
+import getRoutes from "./utils/getRoutes"
+
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -48,7 +50,23 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@nuxt/content',
   ],
+
+  content: {
+    markdown: {
+      prism: {
+        theme: false
+      }
+    }
+  },
+
+  sitemap: {
+    hostname: '',
+    routes() {
+      return getRoutes()
+    }
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},

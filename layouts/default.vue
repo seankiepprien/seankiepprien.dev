@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-full">
+  <div class="min-h-screen">
     <navbar />
     <Nuxt />
     <footer />
@@ -12,6 +12,7 @@
 *::after {
   box-sizing: border-box;
   margin: 0;
+  overflow: hidden;
 }
 div {
   background-color: #0f0c13;
