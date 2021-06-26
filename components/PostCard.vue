@@ -34,6 +34,7 @@ export default {
   min-width: 200px;
   margin-right: 10px;
   padding: 0;
+  border-radius: 5px;
   position: relative;
 }
 .img /deep/ img {

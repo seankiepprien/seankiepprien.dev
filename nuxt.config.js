@@ -13,7 +13,7 @@ export default {
       { hid: 'description', name: 'description', content: '' },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: '/logo.png' },
       // Quicksand,Poppins,Inter,Varela Round fonts
       {
         rel: 'stylesheet',
@@ -30,7 +30,7 @@ export default {
 
   target: 'static',
   router: {
-    base: '/seankiepprien.dev/',
+    base: '/',
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css

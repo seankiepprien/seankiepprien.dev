@@ -33,7 +33,6 @@ export default {
 .img {
   border: 1px solid #eee;
   border-radius: 5px;
-  padding: 5px;
 }
 img {
   max-width: 100%;

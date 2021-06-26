@@ -54,5 +54,6 @@ export default {
 .post {
   margin: auto;
   max-width: 40%;
+  padding-bottom: 4rem;
 }
 </style>
