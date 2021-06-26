@@ -1,26 +1,26 @@
 module.exports = {
-    purge: [
-        './components/**/*.{vue,js}',
+  purge: [
+    './components/**/*.{vue,js}',
 
-        './layouts/**/*.vue',
+    './layouts/**/*.vue',
 
-        './pages/**/*.vue',
+    './pages/**/*.vue',
 
-        './plugins/**/*.{js,ts}',
+    './plugins/**/*.{js,ts}',
 
-        './nuxt.config.{js,ts}'
-    ],
-    darkMode: false, // or 'media' or 'class'
-    theme: {
-      colors: {
-        'background': '16111c',
-        'primary': '#ffffff',
-        'secondary': 'b171ff',
-        'hover': 'd3afff',
-      },
+    './nuxt.config.{js,ts}',
+  ],
+  darkMode: false, // or 'media' or 'class'
+  theme: {
+    colors: {
+      background: '16111c',
+      primary: '#ffffff',
+      secondary: 'b171ff',
+      hover: 'd3afff',
     },
-    variants: {
-      extend: {},
-    },
-    plugins: [],
-  }
+  },
+  variants: {
+    extend: {},
+  },
+  plugins: [],
+}

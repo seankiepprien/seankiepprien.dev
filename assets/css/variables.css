@@ -3,9 +3,13 @@
     --nav-links-family: 'Poppins';
     --main-text-family: 'Varela Round';
     --sec-text-family: 'Inter';
+    --post-text-family: 'Open Sans', sans-serif;
 
     --background-color: #000000;
     --main-text-color: #ffffff;
     --sec-text-color: #b171ff;
     --hover-text-color: #d3afff;
+}
+.font-primary {
+    font-family: var(--main-text-family);
 }

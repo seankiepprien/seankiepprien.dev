@@ -1,4 +1,4 @@
-import getRoutes from "./utils/getRoutes"
+import getRoutes from './utils/getRoutes'
 
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -12,25 +12,29 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-    // Quicksand,Poppins,Inter,Varela Round fonts
-    {
-      rel: "stylesheet",
-      href: "https://fonts.googleapis.com/css2?family=Inter&family=Poppins&family=Quicksand:wght@500&family=Varela+Round&display=swap",
-    },
-  ],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      // Quicksand,Poppins,Inter,Varela Round fonts
+      {
+        rel: 'stylesheet',
+        href:
+          'https://fonts.googleapis.com/css2?family=Inter&family=Poppins&family=Quicksand:wght@500&family=Varela+Round&display=swap',
+      },
+      {
+        rel: 'stylesheet',
+        href:
+          'https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap',
+      },
+    ],
   },
 
   target: 'static',
   router: {
-    base: '/seankiepprien.dev/'
+    base: '/seankiepprien.dev/',
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-    '@/assets/css/variables.css',
-    '@/layouts/globals.css'
-  ],
+  css: ['@/assets/css/variables.css', '@/layouts/globals.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
@@ -56,16 +60,16 @@ export default {
   content: {
     markdown: {
       prism: {
-        theme: false
-      }
-    }
+        theme: false,
+      },
+    },
   },
 
   sitemap: {
     hostname: '',
     routes() {
       return getRoutes()
-    }
+    },
   },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios

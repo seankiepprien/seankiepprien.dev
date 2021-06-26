@@ -1,19 +1,22 @@
 <template>
-  <section>
-    <h2>Posts</h2>
+  <div class="posts">
+    <h2>Tags: {{ $route.params.slug }}</h2>
     <PostCard v-for="post in posts" :key="post.dir" :post="post" />
-  </section>
+  </div>
 </template>
 
 <script>
 import PostCard from '~/components/PostCard.vue'
+
 export default {
   components: {
     PostCard,
   },
   async asyncData({ params, error, $content }) {
     try {
-      const posts = await $content('posts', { deep: true }).fetch()
+      const posts = await $content('posts', { deep: true })
+        .where({ tags: { $contains: params.slug } })
+        .fetch()
       return { posts }
     } catch (err) {
       error({
@@ -24,12 +27,12 @@ export default {
   },
   head() {
     return {
-      title: 'Nuxt Blog',
+      title: 'Tags',
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: 'Cool nuxt blog',
+          content: 'My nuxt blog tags',
         },
       ],
     }
