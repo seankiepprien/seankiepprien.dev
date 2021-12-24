@@ -48,14 +48,42 @@ export default {
     '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/fontawesome',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@nuxtjs/proxy',
     '@nuxt/content',
   ],
+
+  proxy: {
+    '/api/': {
+      target: 'https://api.example.com/',
+      pathRewrite: { '^/api/': '' },
+      changeOrigin: true,
+    },
+  },
+
+  fontawesome: {
+    icons: {
+      solid: ['faArrowRight'],
+      regular: ['faEnvelope'],
+      brands: [
+        'faHtml5',
+        'faCss3Alt',
+        'faJsSquare',
+        'faNode',
+        'faVuejs',
+        'faGithub',
+        'faPhp',
+        'faGit',
+        'faLaravel',
+      ],
+    },
+  },
 
   content: {
     markdown: {
@@ -73,7 +101,9 @@ export default {
   },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {},
+  axios: {
+    proxy: true,
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},

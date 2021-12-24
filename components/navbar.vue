@@ -6,9 +6,11 @@
       </nuxt-link>
     </div>
     <div class="flex space-x-10 main-text-color nav-links nav-links-family">
-      <nuxt-link class="fromleft" to="blog"> Blog </nuxt-link>
+      <nuxt-link class="fromleft" to="about"> About me </nuxt-link>
       <nuxt-link class="fromleft" to="projects"> Projects </nuxt-link>
-      <nuxt-link class="fromleft" to="contact"> Music </nuxt-link>
+      <a class="fromleft" href="mailto:kieppriensean@gmail.com">
+        <span class="sec-text-color">Contact me</span>
+      </a>
     </div>
   </nav>
 </template>
