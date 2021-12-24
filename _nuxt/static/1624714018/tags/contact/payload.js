@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/tags/contact", {data:[{posts:[]}],fetch:{},mutations:void 0});
